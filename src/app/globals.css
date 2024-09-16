@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.app-rounded {
+    @apply rounded-[5px]
+}
+
+.app-select {
+    @apply select w-full bg-[#ECEFF3] app-rounded
+}
+
+.app-btn-red {
+    @apply btn btn-error w-full bg-[#EB2321] text-white app-rounded
+}
