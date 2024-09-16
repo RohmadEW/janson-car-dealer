@@ -40,11 +40,16 @@ export default function Card() {
         <div className="h-[3px] bg-[#CCCCCC]"></div>
         <div className="h-[3px] bg-[#CCCCCC]"></div>
       </div>
-      <div className="flex justify-between gap-1 mt-[17px]">
-        <div className="font-bold text-[14px]">New 3.6 L 2021 Ford Bronco</div>
-        <div className="px-[9.5px] py-[2px] bg-[#EB2321] text-white">
-          <div className="text-[13px] text-right">$45&nbsp;000</div>
-          <div className="text-[14px] font-bold text-right">$40&nbsp;000</div>
+      <div className="flex mt-[17px]">
+        <div className="font-bold text-[14px] mr-auto">
+          New 3.6 L 2021 Ford Bronco
+        </div>
+        <div className="w-0 h-0 border-b-[45px] border-b-[#EB2321] border-l-[15px] border-l-transparent"></div>
+        <div>
+          <div className="px-[9.5px] py-[2px] bg-[#EB2321] text-white">
+            <div className="text-[13px] text-right">$45&nbsp;000</div>
+            <div className="text-[14px] font-bold text-right">$40&nbsp;000</div>
+          </div>
         </div>
       </div>
       <div className="mt-[20px] h-[3px] w-full bg-[#EB2321]"></div>

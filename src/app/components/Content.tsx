@@ -28,10 +28,11 @@ export default function Content() {
           <Filter />
         </div>
         <div className="mt-[17px]">
-          <div className="flex items-center justify-between gap-4 border-b-[#EB2321] border-b-[4px]">
+          <div className="flex items-center border-b-[#EB2321] border-b-[4px]">
             <div className="text-[13px] font-bold uppercase py-[6px] px-[16px] bg-[#EB2321] text-white">
               Featured Classified
             </div>
+            <div className="w-0 h-0 border-b-[31.5px] border-b-[#EB2321] border-r-[31.5px] border-r-transparent mr-auto"></div>
             <button className="btn btn-xs btn-ghost ">
               <div className="font-sans text-[#777777] font-light">
                 Show all
