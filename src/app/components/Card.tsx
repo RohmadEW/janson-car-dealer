@@ -17,9 +17,20 @@ export default function Card() {
           alt="Special"
           className="absolute top-0 left-0"
         />
-        <div className="absolute top-3 left-3 flex items-center gap-2 text-white bg-black bg-opacity-30 rounded-[2px] p-[6px]">
-          <FaCamera className="h-[12px]" />
-          <div className="text-[11px] font-medium">4</div>
+        <div className="absolute top-3 left-3 flex items-center gap-[7.65px]">
+          <div className="flex items-center gap-2 text-white bg-black bg-opacity-30 rounded-[2px] p-[6px]">
+            <FaCamera className="h-[12px]" />
+            <div className="text-[11px] font-medium">4</div>
+          </div>
+          <div className="flex items-center gap-2 text-white bg-black bg-opacity-30 rounded-[2px] p-[6px]">
+            <Image
+              src="/images/icons/video.svg"
+              alt="Video"
+              height={13}
+              width={13}
+            />
+            <div className="text-[11px] font-medium">4</div>
+          </div>
         </div>
         <Image src="/images/car-1.png" width={247} height={155} alt="Car" />
       </div>
