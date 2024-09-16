@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaBox, FaShoppingBag } from "react-icons/fa";
+import { FaBox, FaCamera, FaShoppingBag } from "react-icons/fa";
 import { FiRepeat } from "react-icons/fi";
 
 import { FaPhone } from "react-icons/fa";
@@ -9,7 +9,18 @@ import { FaCalendarAlt } from "react-icons/fa";
 export default function Card() {
   return (
     <div className="w-[247px]">
-      <div className="w-[247px] h-[155px]">
+      <div className="w-[247px] h-[155px] relative">
+        <Image
+          src="/images/special.svg"
+          width={125}
+          height={22}
+          alt="Special"
+          className="absolute top-0 left-0"
+        />
+        <div className="absolute top-3 left-3 flex items-center gap-2 text-white bg-black bg-opacity-30 rounded-[2px] p-[6px]">
+          <FaCamera className="h-[12px]" />
+          <div className="text-[11px] font-medium">4</div>
+        </div>
         <Image src="/images/car-1.png" width={247} height={155} alt="Car" />
       </div>
       <div className="grid grid-cols-4 gap-[2px] mt-[2px]">
