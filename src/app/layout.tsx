@@ -3,13 +3,13 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+  src: "./fonts/Montserrat/Montserrat-VariableFont_wght.ttf",
+  variable: "--montserrat",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+  src: "./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf",
+  variable: "--montserrat-italic",
   weight: "100 900",
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="font-[family-name:var(--montserrat)]">{children}</div>
       </body>
     </html>
   );
