@@ -1,4 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
+import { useState } from "react";
 
 export default function SearchOption() {
   return (
@@ -39,19 +44,71 @@ const Form = () => {
       <select className="app-select text-[#555555]">
         <option>Model Set</option>
       </select>
+      <MileageSlider />
+      <PriceSlider />
       <div>
-        <div className="flex items-center justify-between">
-          <div className="text-[14px]">Mileage</div>
-          <div className="text-[14px]">0mi — 500000mi</div>
+        <button className="app-btn-red w-full mt-[20px]">RESET ALL</button>
+      </div>
+    </div>
+  );
+};
+
+const MileageSlider = () => {
+  const [value, setValue] = useState([0, 500000]);
+
+  const handleChange = (newValue?: number | number[]) => {
+    if (newValue && Array.isArray(newValue)) setValue(newValue);
+  };
+
+  return (
+    <div>
+      <div className="flex items-center justify-between">
+        <div className="text-[14px]">Mileage</div>
+        <div className="text-[14px]">
+          {value[0]}mi — {value[1]}mi
         </div>
       </div>
-      <div>
-        <div className="flex items-center justify-between">
-          <div className="text-[14px]">Price</div>
-          <div className="text-[14px]">$0 — $300 000</div>
+      <div className="mt-[17px]">
+        <Slider
+          range
+          allowCross={false}
+          min={0}
+          max={500000}
+          step={10000}
+          value={value}
+          onChange={handleChange}
+        />
+      </div>
+    </div>
+  );
+};
+
+const PriceSlider = () => {
+  const [value, setValue] = useState([0, 300000]);
+
+  const handleChange = (newValue?: number | number[]) => {
+    if (newValue && Array.isArray(newValue)) setValue(newValue);
+  };
+
+  return (
+    <div>
+      <div className="flex items-center justify-between">
+        <div className="text-[14px]">Price</div>
+        <div className="text-[14px]">
+          ${value[0]} — ${value[1]}
         </div>
       </div>
-      <button className="app-btn-red w-full">RESET ALL</button>
+      <div className="mt-[17px]">
+        <Slider
+          range
+          allowCross={false}
+          min={0}
+          max={300000}
+          step={10000}
+          value={value}
+          onChange={handleChange}
+        />
+      </div>
     </div>
   );
 };
