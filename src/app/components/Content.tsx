@@ -20,7 +20,7 @@ export default function Content() {
           </button>
           <div className="font-sans text-[12px] text-[#888888]">SORT BY :</div>
           <div className="w-[160px]">
-            <select className="app-select select-sm w-[160px] h-[32px] text-[#555555] text-[13px]">
+            <select className="select bg-[#ECEFF3] app-rounded select-sm w-[160px] h-[32px] text-[#555555] text-[13px]">
               <option>Price: lowest first</option>
             </select>
           </div>
