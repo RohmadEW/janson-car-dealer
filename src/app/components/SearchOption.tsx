@@ -5,6 +5,25 @@ import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import { useState } from "react";
 
+const styleSlider = {
+  rail: {
+    backgroundColor: "#EEEEEE",
+    height: "4px",
+  },
+  track: {
+    backgroundColor: "#232628",
+    height: "4px",
+  },
+  handle: {
+    backgroundColor: "#FFFFFF",
+    border: "3.5px solid #232628",
+    height: "15px",
+    width: "15px",
+    marginLeft: "0px",
+    marginTop: "-5.5px",
+  },
+};
+
 export default function SearchOption() {
   return (
     <div>
@@ -77,6 +96,7 @@ const MileageSlider = () => {
           step={10000}
           value={value}
           onChange={handleChange}
+          styles={styleSlider}
         />
       </div>
     </div>
@@ -107,6 +127,7 @@ const PriceSlider = () => {
           step={10000}
           value={value}
           onChange={handleChange}
+          styles={styleSlider}
         />
       </div>
     </div>
