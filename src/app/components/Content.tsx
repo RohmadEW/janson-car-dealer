@@ -1,4 +1,5 @@
 import Card from "@/app/components/Card";
+import { listProducts } from "@/types/product";
 import { FaChevronRight } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
@@ -41,11 +42,9 @@ export default function Content() {
           </div>
         </div>
         <div className="mt-[25px] grid grid-cols-3 gap-[30px]">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {listProducts.map((product, index) => (
+            <Card key={index} product={product} />
+          ))}
         </div>
         <div className="mt-[140px]">
           <Pagination />
@@ -58,7 +57,7 @@ export default function Content() {
 const Filter = () => {
   return (
     <div className="flex items-center">
-      <div className="font-sans text-[13px] shadow-sm py-[6px] px-[13px]">
+      <div className="font-sans text-[13px] shadow-sm py-[6px] px-[13px] border-[#3E444D]">
         <div className="flex items-center gap-1">
           <div className="text-[#AAAAAA]">Condition:</div>
           <div className="text-[#555555]">New</div>
