@@ -1,4 +1,5 @@
 import Card from "@/app/components/Card";
+import { FaChevronRight } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { SlGrid } from "react-icons/sl";
@@ -45,6 +46,9 @@ export default function Content() {
           <Card />
           <Card />
         </div>
+        <div className="mt-[140px]">
+          <Pagination />
+        </div>
       </div>
     </div>
   );
@@ -61,6 +65,24 @@ const Filter = () => {
             <IoMdClose className="text-[#AAAAAA]" />
           </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+const Pagination = () => {
+  return (
+    <div className="flex justify-center">
+      <div className="flex items-center gap-[20px]">
+        <button className="btn btn-disabled btn-sm w-[34px] h-[35px] rounded-[3px]">
+          <div className="text-[14px] text-white">1</div>
+        </button>
+        <button className="btn btn-error bg-[#EB2321] btn-sm w-[34px] h-[35px] rounded-[3px]">
+          <div className="text-[14px] text-white">2</div>
+        </button>
+        <button className="btn btn-error bg-[#EB2321] btn-sm w-[54px] h-[35px] rounded-[3px]">
+          <FaChevronRight className="text-white h-[13px]" />
+        </button>
       </div>
     </div>
   );
