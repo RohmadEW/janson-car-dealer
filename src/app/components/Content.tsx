@@ -1,3 +1,4 @@
+import Card from "@/app/components/Card";
 import { FaListUl } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { SlGrid } from "react-icons/sl";
@@ -36,6 +37,13 @@ export default function Content() {
               </div>
             </button>
           </div>
+        </div>
+        <div className="mt-[25px] grid grid-cols-3 gap-[30px]">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>

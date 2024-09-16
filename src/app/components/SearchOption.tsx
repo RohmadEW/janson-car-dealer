@@ -37,7 +37,7 @@ const Form = () => {
       <select className="app-select">
         <option>Model Set</option>
       </select>
-      <button className="app-btn-red">RESET ALL</button>
+      <button className="app-btn-red  w-full">RESET ALL</button>
     </div>
   );
 };

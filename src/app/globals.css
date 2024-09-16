@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 .app-rounded {
-    @apply rounded-[5px]
+  @apply rounded-[5px];
 }
 
 .app-select {
-    @apply select w-full bg-[#ECEFF3] app-rounded
+  @apply select w-full bg-[#ECEFF3] app-rounded;
+}
+
+.app-btn-white {
+  @apply btn app-rounded bg-white text-[#888888];
 }
 
 .app-btn-red {
-    @apply btn btn-error w-full bg-[#EB2321] text-white app-rounded
+  @apply btn btn-error bg-[#EB2321] text-white app-rounded;
 }
