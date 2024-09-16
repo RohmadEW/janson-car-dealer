@@ -29,13 +29,13 @@ const Form = () => {
   return (
     <div className="px-[22px] py-[24px] space-y-[16px]">
       <select className="app-select">
-        <option selected>Art</option>
+        <option>Art</option>
       </select>
       <select className="app-select">
-        <option selected>Model</option>
+        <option>Model</option>
       </select>
       <select className="app-select">
-        <option selected>Model Set</option>
+        <option>Model Set</option>
       </select>
       <button className="app-btn-red">RESET ALL</button>
     </div>
